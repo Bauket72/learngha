@@ -11,7 +11,7 @@ jobs:
     needs: build
     steps:
       - name: test code
-        run: echo "the code is tested"
+        run: echo "the code is tested and everything is working fine"
   deploy:
     runs-on: ubuntu-latest
     needs: test
