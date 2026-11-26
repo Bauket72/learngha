@@ -8,11 +8,13 @@ jobs:
         run: echo "the code is ready to be tested"
   test:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: test code
         run: echo "the code is tested"
   deploy:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: deploy code
         run: echo "the code is deployed"
