@@ -17,5 +17,5 @@ jobs:
     needs: test
     steps:
       - name: deploy code
-        run: echo "the code is deployed successfully"
+        run: echo " ${{vars.myName}},the code is deployed successfully"
     
