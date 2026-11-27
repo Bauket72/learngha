@@ -16,6 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - name: deploy code
+      - name: deploy the code
         run: echo "the code is deployed successfully"
     
